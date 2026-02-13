@@ -1,0 +1,21 @@
+To add images:
+
+1. Create these folders:
+   - images/slider/
+   - images/admin/
+   - images/sites/
+
+2. Add any photos with these names:
+   - images/emblem.png
+   - images/slider/gomti-river.jpg
+   - images/slider/village-fields.jpg
+   - images/slider/market.jpg
+   - images/slider/temple.jpg
+   - images/slider/aerial-view.jpg
+
+Or use free stock photos from:
+- unsplash.com
+- pexels.com
+- pixabay.com
+
+The website works perfectly without images too - they just show as broken image icons.

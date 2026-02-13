@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ration Shop | Gram Sabha Maksoodan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .commodity-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .commodity-table th {
+            background: #ff9933;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        .commodity-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .download-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .download-card {
+            background: #283593;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .download-card:hover {
+            transform: translateY(-5px);
+            background: #1a237e;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="../images/emblem.png" alt="Government Emblem" class="emblem">
+                        <div class="title-section">
+                            <h1>ग्राम सभा मकसूदन</h1>
+                            <h2>Gram Sabha Maksoodan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-content" style="padding: 60px 0; background: #f9f9f9;">
+        <div class="container">
+            <h1 style="text-align: center; color: #1a237e; margin-bottom: 20px;">
+                <i class="fas fa-store"></i> राशन की दुकान
+            </h1>
+            <h2 style="text-align: center; color: #d84315; margin-bottom: 40px;">
+                Fair Price Shop (उचित मूल्य की दुकान)
+            </h2>
+
+            <div class="info-card">
+                <h3 style="color: #1a237e; margin-bottom: 20px;">
+                    <i class="fas fa-user"></i> कोटेदार विवरण | Kotedar Details
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div>
+                        <p><strong>नाम | Name:</strong> Basant Kumar Singh</p>
+                        <p><strong>पिता का नाम | Father's Name:</strong> [Father's Name]</p>
+                    </div>
+                    <div>
+                        <p><strong>मोबाइल नंबर | Mobile No.:</strong> +91-945021711</p>
+                        <p><strong>लाइसेंस नंबर | License No.:</strong> 20491620</p>
+                    </div>
+                    <div>
+                        <p><strong>स्थान | Location:</strong> Maksoodan, Sultanpur</p>
+                        <p><strong>खुलने का समय | Opening Hours:</strong> 8:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #1a237e; margin: 40px 0 20px; text-align: center;">
+                <i class="fas fa-shopping-basket"></i> वस्तुओं की सूची और दर | Commodities & Rates
+            </h3>
+
+            <table class="commodity-table">
+                <thead>
+                    <tr>
+                        <th>Item | वस्तु</th>
+                        <th>Quantity (Per Card) | मात्रा (प्रति कार्ड)</th>
+                        <th>Rate | दर</th>
+                        <th>Category | श्रेणी</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wheat | गेहूं</td>
+                        <td>35 Kg</td>
+                        <td>₹2 per Kg</td>
+                        <td>BPL/AAY</td>
+                    </tr>
+                    <tr>
+                        <td>Rice | चावल</td>
+                        <td>35 Kg</td>
+                        <td>₹3 per Kg</td>
+                        <td>BPL/AAY</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar | चीनी</td>
+                        <td>2 Kg</td>
+                        <td>₹13.50 per Kg</td>
+                        <td>All Categories</td>
+                    </tr>
+                    <tr>
+                        <td>Wheat | गेहूं</td>
+                        <td>15 Kg</td>
+                        <td>₹2 per Kg</td>
+                        <td>APL</td>
+                    </tr>
+                    <tr>
+                        <td>Rice | चावल</td>
+                        <td>15 Kg</td>
+                        <td>₹3 per Kg</td>
+                        <td>APL</td>
+                    </tr>
+                    <tr>
+                        <td>Kerosene | मिट्टी का तेल</td>
+                        <td>3 Liters</td>
+                        <td>₹25 per Liter</td>
+                        <td>BPL/AAY</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="background: #fff3cd; padding: 20px; border-radius: 5px; margin: 30px 0;">
+                <h4 style="color: #d84315; margin-bottom: 10px;">
+                    <i class="fas fa-info-circle"></i> श्रेणी विवरण | Category Details
+                </h4>
+                <ul style="line-height: 2;">
+                    <li><strong>APL:</strong> Above Poverty Line (गरीबी रेखा से ऊपर)</li>
+                    <li><strong>BPL:</strong> Below Poverty Line (गरीबी रेखा से नीचे)</li>
+                    <li><strong>AAY:</strong> Antyodaya Anna Yojana (अंत्योदय अन्न योजना)</li>
+                </ul>
+            </div>
+
+            <h3 style="color: #1a237e; margin: 40px 0 20px; text-align: center;">
+                <i class="fas fa-download"></i> डाउनलोड सूची | Download Lists
+            </h3>
+
+            <div class="download-section">
+                <a href="#" class="download-card" target="_blank">
+                    <i class="fas fa-file-pdf" style="font-size: 40px; margin-bottom: 10px;"></i>
+                    <h4>APL List</h4>
+                    <p>एपीएल सूची</p>
+                </a>
+                <a href="..\assets\pdfs\bpl.pdf" class="download-card" target="_blank">
+                    <i class="fas fa-file-pdf" style="font-size: 40px; margin-bottom: 10px;"></i>
+                    <h4>BPL List</h4>
+                    <p>बीपीएल सूची</p>
+                </a>
+                <a href="..\assets\pdfs\antyoday.pdf" class="download-card" target="_blank">
+                    <i class="fas fa-file-pdf" style="font-size: 40px; margin-bottom: 10px;"></i>
+                    <h4>Antyodaya List</h4>
+                    <p>अंत्योदय सूची</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gram Sabha Maksoodan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

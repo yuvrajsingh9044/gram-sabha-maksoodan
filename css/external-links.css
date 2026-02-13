@@ -1,0 +1,388 @@
+/* External Links Page Styles */
+
+.external-links-section {
+    background: #f5f5f5;
+    padding: 0 0 60px 0;
+}
+
+/* Banner */
+.links-banner {
+    position: relative;
+    height: 350px;
+    background: linear-gradient(135deg, #0d47a1 0%, #1976d2 50%, #42a5f5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 71, 161, 0.85);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+}
+
+.banner-icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.banner-content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.subtitle-hindi {
+    font-size: 15px;
+    opacity: 0.95;
+}
+
+/* Introduction Section */
+.intro-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.intro-text-hindi {
+    font-size: 16px;
+    color: #d84315;
+    line-height: 1.8;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1976d2;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 20px;
+    color: #d84315;
+}
+
+/* Links Grid */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+/* Link Card */
+.link-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #1976d2;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.link-card:hover::before {
+    transform: scaleY(1);
+}
+
+.link-card.featured {
+    border: 2px solid #1976d2;
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+}
+
+/* Link Icon */
+.link-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+    color: white;
+}
+
+.link-icon.android { background: linear-gradient(135deg, #3ddc84, #2bb673); }
+.link-icon.apple { background: linear-gradient(135deg, #555, #333); }
+.link-icon.web { background: linear-gradient(135deg, #1976d2, #1565c0); }
+.link-icon.government { background: linear-gradient(135deg, #d32f2f, #c62828); }
+.link-icon.complaint { background: linear-gradient(135deg, #f57c00, #ef6c00); }
+.link-icon.welfare { background: linear-gradient(135deg, #7b1fa2, #6a1b9a); }
+.link-icon.education { background: linear-gradient(135deg, #0288d1, #0277bd); }
+.link-icon.agriculture { background: linear-gradient(135deg, #388e3c, #2e7d32); }
+.link-icon.ration { background: linear-gradient(135deg, #f57f17, #f57f17); }
+.link-icon.family { background: linear-gradient(135deg, #00897b, #00796b); }
+.link-icon.health { background: linear-gradient(135deg, #e53935, #d32f2f); }
+.link-icon.aadhaar { background: linear-gradient(135deg, #1565c0, #0d47a1); }
+.link-icon.tax { background: linear-gradient(135deg, #5e35b1, #512da8); }
+.link-icon.housing { background: linear-gradient(135deg, #ff6f00, #e65100); }
+.link-icon.employment { background: linear-gradient(135deg, #00695c, #004d40); }
+.link-icon.banking { background: linear-gradient(135deg, #1976d2, #1565c0); }
+.link-icon.insurance { background: linear-gradient(135deg, #43a047, #388e3c); }
+.link-icon.electricity { background: linear-gradient(135deg, #fbc02d, #f9a825); }
+.link-icon.transport { background: linear-gradient(135deg, #455a64, #37474f); }
+
+/* Link Content */
+.link-content {
+    flex: 1;
+}
+
+.link-content h4 {
+    font-size: 18px;
+    color: #0d47a1;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.link-hindi {
+    font-size: 15px;
+    color: #d84315;
+    margin-bottom: 8px;
+}
+
+.link-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Link Arrow */
+.link-arrow {
+    font-size: 20px;
+    color: #1976d2;
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover .link-arrow {
+    transform: translateX(5px);
+}
+
+/* Help Section */
+.help-section {
+    margin: 50px 0;
+}
+
+.help-card {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    border: 3px solid #ff9800;
+    box-shadow: 0 6px 20px rgba(255, 152, 0, 0.2);
+}
+
+.help-icon {
+    font-size: 60px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.help-card h3 {
+    font-size: 28px;
+    color: #0d47a1;
+    margin-bottom: 8px;
+}
+
+.help-hindi {
+    font-size: 22px;
+    color: #d84315;
+    margin-bottom: 20px;
+}
+
+.help-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.help-text-hindi {
+    font-size: 15px;
+    color: #d84315;
+}
+
+.help-card a {
+    color: #1976d2;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.help-card a:hover {
+    color: #0d47a1;
+}
+
+/* Disclaimer Section */
+.disclaimer-section {
+    background: #fff3e0;
+    border-left: 5px solid #ff9800;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.disclaimer-section h4 {
+    font-size: 20px;
+    color: #0d47a1;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.disclaimer-section p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.disclaimer-hindi {
+    font-size: 14px;
+    color: #d84315;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 28px;
+    }
+    
+    .banner-content h2 {
+        font-size: 22px;
+    }
+    
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .link-card {
+        padding: 20px;
+    }
+    
+    .link-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    .link-content h4 {
+        font-size: 16px;
+    }
+    
+    .section-header h2 {
+        font-size: 24px;
+    }
+    
+    .help-card {
+        padding: 30px 20px;
+    }
+}
+
+/* Animation for cards on load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.link-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.link-card:nth-child(1) { animation-delay: 0.1s; }
+.link-card:nth-child(2) { animation-delay: 0.2s; }
+.link-card:nth-child(3) { animation-delay: 0.3s; }
+.link-card:nth-child(4) { animation-delay: 0.4s; }
+.link-card:nth-child(5) { animation-delay: 0.5s; }
+.link-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Print Styles */
+@media print {
+    .links-banner,
+    .help-section,
+    .disclaimer-section {
+        display: none;
+    }
+    
+    .link-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .link-arrow {
+        display: none;
+    }
+}

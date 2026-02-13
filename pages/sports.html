@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports & Youth Activities | Gram Sabha Maksoodan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="../images/emblem.png" alt="Government Emblem" class="emblem">
+                        <div class="title-section">
+                            <h1>ग्राम सभा मकसूदन</h1>
+                            <h2>Gram Sabha Maksoodan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="sports-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <div class="banner-icon"><i class="fas fa-trophy"></i></div>
+            <h1>Sports & Youth Activities – Maksoodan</h1>
+            <h2>खेल और युवा गतिविधियां - मकसूदन</h2>
+            <p class="subtitle">Promoting Fitness, Team Spirit & Rural Talent</p>
+            <p class="subtitle-hindi">फिटनेस, टीम भावना और ग्रामीण प्रतिभा को बढ़ावा देना</p>
+        </div>
+    </section>
+
+    <section class="sports-section">
+        <div class="container">
+
+            <!-- Sports Overview -->
+            <div class="overview-stats">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Sports Teams</div>
+                    <div class="stat-label-hindi">खेल टीमें</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-running"></i></div>
+                    <div class="stat-number" data-target="85">0</div>
+                    <div class="stat-label">Active Players</div>
+                    <div class="stat-label-hindi">सक्रिय खिलाड़ी</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Tournaments Conducted</div>
+                    <div class="stat-label-hindi">आयोजित टूर्नामेंट</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-medal"></i></div>
+                    <div class="stat-number" data-target="18">0</div>
+                    <div class="stat-label">Awards Won</div>
+                    <div class="stat-label-hindi">जीते गए पुरस्कार</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-flag-checkered"></i></div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Annual Sports Events</div>
+                    <div class="stat-label-hindi">वार्षिक खेल कार्यक्रम</div>
+                </div>
+            </div>
+
+            <!-- Official Village Teams -->
+            <div class="section-header">
+                <h2><i class="fas fa-shield-alt"></i> Official Village Teams</h2>
+                <p>आधिकारिक ग्राम टीमें</p>
+            </div>
+
+            <div class="teams-container">
+                <!-- Cricket Team -->
+                <div class="team-card cricket">
+                    <div class="team-header">
+                        <div class="team-icon"><i class="fas fa-baseball-ball"></i></div>
+                        <div class="team-info">
+                            <h3>Cricket Team – Maksoodan</h3>
+                            <p class="team-hindi">क्रिकेट टीम - मकसूदन</p>
+                        </div>
+                    </div>
+                    <div class="team-body">
+                        <div class="team-leadership">
+                            <div class="leader">
+                                <strong>Captain:</strong> [Player Name]
+                            </div>
+                            <div class="leader">
+                                <strong>Vice-Captain:</strong> [Player Name]
+                            </div>
+                        </div>
+                        <div class="team-stats">
+                            <span><i class="fas fa-users"></i> 15 Players</span>
+                            <span><i class="fas fa-trophy"></i> 5 Tournaments</span>
+                            <span><i class="fas fa-medal"></i> 3 Wins</span>
+                        </div>
+                        <button class="view-team-btn" onclick="showTeamDetails('cricket')">
+                            <i class="fas fa-eye"></i> View Team Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Volleyball Team -->
+                <div class="team-card volleyball">
+                    <div class="team-header">
+                        <div class="team-icon"><i class="fas fa-volleyball-ball"></i></div>
+                        <div class="team-info">
+                            <h3>Volleyball Team – Maksoodan</h3>
+                            <p class="team-hindi">वॉलीबॉल टीम - मकसूदन</p>
+                        </div>
+                    </div>
+                    <div class="team-body">
+                        <div class="team-leadership">
+                            <div class="leader">
+                                <strong>Captain:</strong> [Player Name]
+                            </div>
+                        </div>
+                        <div class="team-stats">
+                            <span><i class="fas fa-users"></i> 12 Players</span>
+                            <span><i class="fas fa-trophy"></i> 8 Matches</span>
+                            <span><i class="fas fa-medal"></i> 4 Wins</span>
+                        </div>
+                        <button class="view-team-btn" onclick="showTeamDetails('volleyball')">
+                            <i class="fas fa-eye"></i> View Team Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kabaddi Team -->
+                <div class="team-card kabaddi">
+                    <div class="team-header">
+                        <div class="team-icon"><i class="fas fa-hand-rock"></i></div>
+                        <div class="team-info">
+                            <h3>Kabaddi Team – Maksoodan</h3>
+                            <p class="team-hindi">कबड्डी टीम - मकसूदन</p>
+                        </div>
+                    </div>
+                    <div class="team-body">
+                        <div class="team-leadership">
+                            <div class="leader">
+                                <strong>Captain:</strong> [Player Name]
+                            </div>
+                        </div>
+                        <div class="team-stats">
+                            <span><i class="fas fa-users"></i> 10 Players</span>
+                            <span><i class="fas fa-trophy"></i> 6 Tournaments</span>
+                            <span><i class="fas fa-medal"></i> 2 Wins</span>
+                        </div>
+                        <button class="view-team-btn" onclick="showTeamDetails('kabaddi')">
+                            <i class="fas fa-eye"></i> View Team Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Badminton Team -->
+                <div class="team-card badminton">
+                    <div class="team-header">
+                        <div class="team-icon"><i class="fas fa-shuttlecock"></i></div>
+                        <div class="team-info">
+                            <h3>Badminton Team – Maksoodan</h3>
+                            <p class="team-hindi">बैडमिंटन टीम - मकसूदन</p>
+                        </div>
+                    </div>
+                    <div class="team-body">
+                        <div class="team-leadership">
+                            <div class="leader">
+                                <strong>Singles & Doubles Players</strong>
+                            </div>
+                        </div>
+                        <div class="team-stats">
+                            <span><i class="fas fa-users"></i> 8 Players</span>
+                            <span><i class="fas fa-trophy"></i> 4 Competitions</span>
+                            <span><i class="fas fa-medal"></i> 3 Wins</span>
+                        </div>
+                        <button class="view-team-btn" onclick="showTeamDetails('badminton')">
+                            <i class="fas fa-eye"></i> View Team Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Traditional Games -->
+                <div class="team-card traditional">
+                    <div class="team-header">
+                        <div class="team-icon"><i class="fas fa-gamepad"></i></div>
+                        <div class="team-info">
+                            <h3>Traditional Games – Bolli Ball</h3>
+                            <p class="team-hindi">पारंपरिक खेल - बोली बॉल</p>
+                        </div>
+                    </div>
+                    <div class="team-body">
+                        <div class="team-leadership">
+                            <div class="leader">
+                                <strong>Local Traditional Sport</strong>
+                            </div>
+                        </div>
+                        <div class="team-stats">
+                            <span><i class="fas fa-users"></i> 20 Players</span>
+                            <span><i class="fas fa-trophy"></i> Village Events</span>
+                        </div>
+                        <button class="view-team-btn" onclick="showTeamDetails('traditional')">
+                            <i class="fas fa-eye"></i> View Team Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player Profiles Section -->
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Featured Players</h2>
+                <p>प्रमुख खिलाड़ी</p>
+            </div>
+
+            <div class="filter-section">
+                <input type="text" id="playerSearch" placeholder="Search players by name..." class="search-input">
+                <select id="sportFilter" class="filter-select">
+                    <option value="all">All Sports</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="kabaddi">Kabaddi</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="traditional">Traditional Games</option>
+                </select>
+            </div>
+
+            <div class="players-grid" id="playersGrid">
+                <!-- Players will be populated by JavaScript -->
+            </div>
+
+            <!-- Tournament & Event Records -->
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-check"></i> Tournament & Event Records</h2>
+                <p>टूर्नामेंट और कार्यक्रम रिकॉर्ड</p>
+            </div>
+
+            <div class="tournaments-container" id="tournamentsContainer">
+                <!-- Tournaments will be populated by JavaScript -->
+            </div>
+
+            <!-- Sports Infrastructure -->
+            <div class="section-header">
+                <h2><i class="fas fa-building"></i> Sports Infrastructure</h2>
+                <p>खेल बुनियादी ढांचा</p>
+            </div>
+
+            <div class="infrastructure-grid">
+                <div class="infra-card">
+                    <div class="infra-icon"><i class="fas fa-baseball-ball"></i></div>
+                    <h3>Cricket Ground</h3>
+                    <p class="infra-hindi">क्रिकेट मैदान</p>
+                    <div class="infra-details">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Maksoodan Main</span>
+                        <span class="status good"><i class="fas fa-check-circle"></i> Good Condition</span>
+                    </div>
+                </div>
+
+                <div class="infra-card">
+                    <div class="infra-icon"><i class="fas fa-volleyball-ball"></i></div>
+                    <h3>Volleyball Court</h3>
+                    <p class="infra-hindi">वॉलीबॉल कोर्ट</p>
+                    <div class="infra-details">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> School Playground</span>
+                        <span class="status good"><i class="fas fa-check-circle"></i> Good Condition</span>
+                    </div>
+                </div>
+
+                <div class="infra-card">
+                    <div class="infra-icon"><i class="fas fa-hand-rock"></i></div>
+                    <h3>Kabaddi Field</h3>
+                    <p class="infra-hindi">कबड्डी मैदान</p>
+                    <div class="infra-details">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Community Ground</span>
+                        <span class="status average"><i class="fas fa-exclamation-circle"></i> Needs Improvement</span>
+                    </div>
+                </div>
+
+                <div class="infra-card">
+                    <div class="infra-icon"><i class="fas fa-school"></i></div>
+                    <h3>School Playground</h3>
+                    <p class="infra-hindi">स्कूल का खेल का मैदान</p>
+                    <div class="infra-details">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Primary School</span>
+                        <span class="status good"><i class="fas fa-check-circle"></i> Good Condition</span>
+                    </div>
+                </div>
+
+                <div class="infra-card">
+                    <div class="infra-icon"><i class="fas fa-shuttlecock"></i></div>
+                    <h3>Badminton Court</h3>
+                    <p class="infra-hindi">बैडमिंटन कोर्ट</p>
+                    <div class="infra-details">
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Community Hall</span>
+                        <span class="status good"><i class="fas fa-check-circle"></i> Indoor Facility</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements & Honors -->
+            <div class="section-header">
+                <h2><i class="fas fa-award"></i> Achievements & Honors</h2>
+                <p>उपलब्धियां और सम्मान</p>
+            </div>
+
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>District Level Players</h3>
+                    <p class="achievement-count">8 Players</p>
+                    <p class="achievement-desc">Represented at district level competitions</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <h3>State Participation</h3>
+                    <p class="achievement-count">3 Players</p>
+                    <p class="achievement-desc">Selected for state level tournaments</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Trophy Wins</h3>
+                    <p class="achievement-count">18 Trophies</p>
+                    <p class="achievement-desc">Won in various inter-village tournaments</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Government Recognition</h3>
+                    <p class="achievement-count">5 Awards</p>
+                    <p class="achievement-desc">Recognized by district sports authority</p>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="section-header">
+                <h2><i class="fas fa-images"></i> Photo Gallery</h2>
+                <p>फोटो गैलरी</p>
+            </div>
+
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-category="all">All Photos</button>
+                <button class="gallery-tab" data-category="matches">Matches</button>
+                <button class="gallery-tab" data-category="practice">Practice Sessions</button>
+                <button class="gallery-tab" data-category="ceremonies">Trophy Ceremonies</button>
+                <button class="gallery-tab" data-category="events">Sports Day Events</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-plus"></i> Upcoming Events</h2>
+                <p>आगामी कार्यक्रम</p>
+            </div>
+
+            <div class="upcoming-events">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">25</span>
+                        <span class="date-month">Feb</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Inter-Village Cricket Tournament</h3>
+                        <p class="event-hindi">अंतर-ग्राम क्रिकेट टूर्नामेंट</p>
+                        <p class="event-info"><i class="fas fa-map-marker-alt"></i> Maksoodan Cricket Ground</p>
+                        <p class="event-info"><i class="fas fa-clock"></i> 9:00 AM onwards</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">10</span>
+                        <span class="date-month">Mar</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Kabaddi Team Trials</h3>
+                        <p class="event-hindi">कबड्डी टीम ट्रायल</p>
+                        <p class="event-info"><i class="fas fa-map-marker-alt"></i> Community Ground</p>
+                        <p class="event-info"><i class="fas fa-clock"></i> 5:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Mar</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Annual Sports Day</h3>
+                        <p class="event-hindi">वार्षिक खेल दिवस</p>
+                        <p class="event-info"><i class="fas fa-map-marker-alt"></i> School Playground</p>
+                        <p class="event-info"><i class="fas fa-clock"></i> Full Day Event</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Youth Registration Form -->
+            <div class="section-header">
+                <h2><i class="fas fa-user-plus"></i> Youth Registration</h2>
+                <p>युवा पंजीकरण</p>
+            </div>
+
+            <div class="registration-section">
+                <div class="registration-info">
+                    <h3>Join Our Sports Teams!</h3>
+                    <p>Register yourself to participate in village sports activities and represent Maksoodan in tournaments.</p>
+                    <p class="info-hindi">गांव की खेल गतिविधियों में भाग लेने और टूर्नामेंट में मकसूदन का प्रतिनिधित्व करने के लिए खुद को पंजीकृत करें।</p>
+                </div>
+
+                <form class="registration-form" id="sportsRegistrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name | पूरा नाम <span class="required">*</span></label>
+                            <input type="text" id="playerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Father's Name | पिता का नाम <span class="required">*</span></label>
+                            <input type="text" id="fatherName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Age | आयु <span class="required">*</span></label>
+                            <input type="number" id="age" min="10" max="40" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile Number | मोबाइल नंबर <span class="required">*</span></label>
+                            <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Area / Hamlet | क्षेत्र <span class="required">*</span></label>
+                            <select id="area" required>
+                                <option value="">Select Area</option>
+                                <option value="maksoodan">Maksoodan Main</option>
+                                <option value="jafarapur">Jafarapur</option>
+                                <option value="mishrapur">Mishrapur</option>
+                                <option value="kharahna">Kharahna</option>
+                                <option value="jiyanpur">Jiyanpur</option>
+                                <option value="jhaliya">Jhaliya</option>
+                                <option value="barraiya">Barraiya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Sport | खेल <span class="required">*</span></label>
+                            <select id="sport" required>
+                                <option value="">Select Sport</option>
+                                <option value="cricket">Cricket</option>
+                                <option value="volleyball">Volleyball</option>
+                                <option value="kabaddi">Kabaddi</option>
+                                <option value="badminton">Badminton</option>
+                                <option value="traditional">Traditional Games</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Previous Experience (if any) | पिछला अनुभव</label>
+                        <textarea id="experience" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Registration | पंजीकरण जमा करें
+                    </button>
+                </form>
+            </div>
+
+            <!-- Footer Note -->
+            <div class="sports-footer">
+                <div class="footer-icon"><i class="fas fa-heart"></i></div>
+                <p class="footer-message">
+                    Gram Sabha Maksoodan encourages youth to participate in sports for physical fitness, 
+                    discipline, and community pride.
+                </p>
+                <p class="footer-message-hindi">
+                    ग्राम सभा मकसूदन युवाओं को शारीरिक फिटनेस, अनुशासन और सामुदायिक गौरव के लिए 
+                    खेलों में भाग लेने के लिए प्रोत्साहित करती है।
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Team Details Modal -->
+    <div id="teamModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="teamModalBody">
+                <!-- Team details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Player Profile Modal -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="playerModalBody">
+                <!-- Player details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gram Sabha Maksoodan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/sports.js"></script>
+</body>
+</html>

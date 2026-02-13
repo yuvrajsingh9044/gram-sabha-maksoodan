@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religious & Important Sites | Gram Sabha Maksoodan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/religious-sites.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="../images/emblem.png" alt="Government Emblem" class="emblem">
+                        <div class="title-section">
+                            <h1>ग्राम सभा मकसूदन</h1>
+                            <h2>Gram Sabha Maksoodan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="religious-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>Religious & Important Sites of Maksoodan</h1>
+            <h2>मकसूदन के धार्मिक और महत्वपूर्ण स्थल</h2>
+            <p class="subtitle">Spiritual Heritage of Our Gram Sabha</p>
+            <p class="subtitle-hindi">हमारी ग्राम सभा की आध्यात्मिक विरासत</p>
+        </div>
+    </section>
+
+    <section class="religious-sites-section">
+        <div class="container">
+            
+            <!-- Introduction -->
+            <div class="intro-section">
+                <p class="intro-text">
+                    Gram Sabha Maksoodan is blessed with a rich spiritual heritage, where temples, ghats, and mosques 
+                    stand as symbols of our cultural diversity and religious harmony. Situated along the sacred banks 
+                    of River Gomti, our village has been a center of faith and devotion for generations.
+                </p>
+                <p class="intro-text-hindi">
+                    ग्राम सभा मकसूदन एक समृद्ध आध्यात्मिक विरासत से संपन्न है, जहां मंदिर, घाट और मस्जिद हमारी 
+                    सांस्कृतिक विविधता और धार्मिक सद्भाव के प्रतीक हैं। पवित्र गोमती नदी के तट पर स्थित, 
+                    हमारा गांव पीढ़ियों से आस्था और भक्ति का केंद्र रहा है।
+                </p>
+            </div>
+
+            <!-- Quick Navigation -->
+            <div class="quick-nav">
+                <a href="#temples" class="nav-card">
+                    <i class="fas fa-om"></i>
+                    <span>Temples | मंदिर</span>
+                </a>
+                <a href="#ghats" class="nav-card">
+                    <i class="fas fa-water"></i>
+                    <span>Ghats | घाट</span>
+                </a>
+                <a href="#mosques" class="nav-card">
+                    <i class="fas fa-mosque"></i>
+                    <span>Mosques | मस्जिद</span>
+                </a>
+                <a href="#map" class="nav-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Map | मानचित्र</span>
+                </a>
+            </div>
+
+            <!-- TEMPLES SECTION -->
+            <div id="temples" class="category-section">
+                <div class="section-header">
+                    <div class="header-icon">🛕</div>
+                    <div class="header-text">
+                        <h2>Temples | मंदिर</h2>
+                        <p>Sacred places of worship and devotion</p>
+                    </div>
+                </div>
+
+                <div class="sites-grid">
+                    <!-- Hanuman Mandir -->
+                    <div class="site-card" data-site="hanuman-mandir">
+                        <div class="site-image">
+                            <img src="../images/sites/temple2.jpg" alt="Hanuman Mandir" 
+                                 onerror="this.src='../images/placeholder-temple.jpg'">
+                            <div class="site-badge temple">Temple</div>
+                        </div>
+                        <div class="site-content">
+                            <h3>🚩 Hanuman Mandir</h3>
+                            <h4>हनुमान मंदिर</h4>
+                            <div class="site-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Maksoodan Main Area</span>
+                            </div>
+                            <div class="site-deity">
+                                <strong>Deity:</strong> Lord Hanuman | भगवान हनुमान
+                            </div>
+                            <p class="site-description">
+                                Ancient temple dedicated to Lord Hanuman, serving as a spiritual center for devotees. 
+                                The temple witnesses large gatherings during Hanuman Jayanti and every Tuesday.
+                            </p>
+                            <div class="site-festivals">
+                                <strong>Major Festivals:</strong>
+                                <span class="festival-tag">Hanuman Jayanti</span>
+                                <span class="festival-tag">Tuesday Worship</span>
+                            </div>
+                            <button class="view-details-btn" onclick="showSiteDetails('hanuman-mandir')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Ram Mandir -->
+                    <div class="site-card" data-site="ram-mandir">
+                        <div class="site-image">
+                            <img src="../images/sites/temple1.jpg" alt="Ram Mandir" 
+                                 onerror="this.src='../images/placeholder-temple.jpg'">
+                            <div class="site-badge temple">Temple</div>
+                        </div>
+                        <div class="site-content">
+                            <h3>🚩 Ram Mandir</h3>
+                            <h4>राम मंदिर</h4>
+                            <div class="site-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Near Village Center, Jafarapur Road</span>
+                            </div>
+                            <div class="site-deity">
+                                <strong>Deity:</strong> Lord Shri Ram | भगवान श्री राम
+                            </div>
+                            <p class="site-description">
+                                Sacred temple dedicated to Lord Rama. The temple hosts grand celebrations during Ram Navami 
+                                with Ramayan path, bhajans, and cultural programs that unite the entire community.
+                            </p>
+                            <div class="site-festivals">
+                                <strong>Major Festivals:</strong>
+                                <span class="festival-tag">Ram Navami</span>
+                                <span class="festival-tag">Ramayan Path</span>
+                                <span class="festival-tag">Diwali</span>
+                            </div>
+                            <button class="view-details-btn" onclick="showSiteDetails('ram-mandir')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Durga Mandir -->
+                    <div class="site-card" data-site="durga-mandir">
+                        <div class="site-image">
+                            <img src="../images/sites/Shrine.jpg" alt="Durga Mandir" 
+                                 onerror="this.src='../images/placeholder-temple.jpg'">
+                            <div class="site-badge temple">Temple</div>
+                        </div>
+                        <div class="site-content">
+                            <h3>🚩 Durga Mandir</h3>
+                            <h4>दुर्गा मंदिर</h4>
+                            <div class="site-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Maksoodan Village</span>
+                            </div>
+                            <div class="site-deity">
+                                <strong>Deity:</strong> Goddess Durga | माता दुर्गा
+                            </div>
+                            <p class="site-description">
+                                Revered shrine of Goddess Durga, the temple becomes the epicenter of devotion during 
+                                Navratri. Annual fairs, jagrans, and cultural events are organized with great enthusiasm.
+                            </p>
+                            <div class="site-festivals">
+                                <strong>Major Festivals:</strong>
+                                <span class="festival-tag">Navratri</span>
+                                <span class="festival-tag">Durga Puja</span>
+                                <span class="festival-tag">Jagran</span>
+                            </div>
+                            <button class="view-details-btn" onclick="showSiteDetails('durga-mandir')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GHATS SECTION -->
+            <div id="ghats" class="category-section ghats-section">
+                <div class="river-wave-top"></div>
+                
+                <div class="section-header">
+                    <div class="header-icon">🌊</div>
+                    <div class="header-text">
+                        <h2>Ghats - River Gomti | घाट - गोमती नदी</h2>
+                        <p>Sacred riverfront sites for rituals and ceremonies</p>
+                    </div>
+                </div>
+
+                <div class="river-info">
+                    <div class="river-icon">🏞️</div>
+                    <p>
+                        <strong>River Gomti surrounds Maksoodan on North & West sides</strong><br>
+                        गोमती नदी मकसूदन को उत्तर और पश्चिम दिशा से घेरती है
+                    </p>
+                    <p class="river-note">
+                        These ghats serve as sacred cremation and ritual sites for village communities along River Gomti, 
+                        preserving ancient traditions of final rites and spiritual ceremonies.
+                    </p>
+                </div>
+
+                <div class="sites-grid">
+                    <!-- Kodadiya Ghat -->
+                    <div class="site-card ghat-card" data-site="kodadiya-ghat">
+                        <div class="site-image">
+                            <img src="../images/sites/kodadiya-ghat.jpg" alt="Kodadiya Ghat" 
+                                 onerror="this.src='../images/placeholder-ghat.jpg'">
+                            <div class="site-badge ghat">Ghat</div>
+                        </div>
+                        <div class="site-content">
+                            <h3>🌊 Kodadiya Ghat</h3>
+                            <h4>कोड़दिया घाट</h4>
+                            <div class="site-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>West Gomti Bank, Maksoodan Side</span>
+                            </div>
+                            <div class="ghat-uses">
+                                <strong>Primary Uses:</strong>
+                                <div class="use-tags">
+                                    <span class="use-tag">Cremation Rituals</span>
+                                    <span class="use-tag">Religious Bathing</span>
+                                    <span class="use-tag">Pind Daan</span>
+                                    <span class="use-tag">Shraddh Ceremonies</span>
+                                </div>
+                            </div>
+                            <p class="site-description">
+                                One of the main ghats serving the community for final rites and ancestral ceremonies. 
+                                The ghat holds deep spiritual significance for performing last rites and shraddh rituals.
+                            </p>
+                            <button class="view-details-btn" onclick="showSiteDetails('kodadiya-ghat')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Baniyavta Ghat -->
+                    <div class="site-card ghat-card" data-site="baniyavta-ghat">
+                        <div class="site-image">
+                            <img src="../images/sites/baniyavta-ghat.jpg" alt="Baniyavta Ghat" 
+                                 onerror="this.src='../images/placeholder-ghat.jpg'">
+                            <div class="site-badge ghat">Ghat</div>
+                        </div>
+                        <div class="site-content">
+                            <h3>🌊 Baniyavta Ghat</h3>
+                            <h4>बनियावता घाट</h4>
+                            <div class="site-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Gomti Riverbank, Near Baniyavta Locality</span>
+                            </div>
+                            <div class="ghat-uses">
+                                <strong>Primary Uses:</strong>
+                                <div class="use-tags">
+                                    <span class="use-tag">Ritual Activities</span>
+                                    <span class="use-tag">Community Usage</span>
+                                    <span class="use-tag">Religious Ceremonies</span>
+                                </div>
+                            </div>
+                            <p class="site-description">
+                                Important ghat serving the local community for various religious and ritual activities. 
+                                The site is well-maintained and accessible for community ceremonies.
+                            </p>
+                            <button class="view-details-btn" onclick="showSiteDetails('baniyavta-ghat')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Nisad Ghat -->
+                    <div class="site-card ghat-card" data-site="nisad-ghat">
+                        <div class="site-image">
+                            <img src="../images/sites/nisad-ghat.jpg" alt="Nisad Ghat" 
+                                 onerror="this.src='../images/placeholder-ghat.jpg'">
+                            <div class="site-badge ghat">Ghat</div>
+                        </div>
+                        <div class="site-content">
+                            <h3>🌊 Nisad Ghat</h3>
+                            <h4>निषाद घाट</h4>
+                            <div class="site-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Nishad Community Locality, Gomti Bank</span>
+                            </div>
+                            <div class="ghat-uses">
+                                <strong>Primary Uses:</strong>
+                                <div class="use-tags">
+                                    <span class="use-tag">Cultural Significance</span>
+                                    <span class="use-tag">River Livelihood</span>
+                                    <span class="use-tag">Community Rituals</span>
+                                </div>
+                            </div>
+                            <p class="site-description">
+                                Historically significant ghat associated with the Nishad community, reflecting the deep 
+                                connection between river livelihood and spiritual practices. The ghat represents cultural 
+                                heritage and traditional river-based community life.
+                            </p>
+                            <button class="view-details-btn" onclick="showSiteDetails('nisad-ghat')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Anemau Ghat -->
+                    <div class="site-card ghat-card" data-site="anemau-ghat">
+                        <div class="site-image">
+                            <img src="../images/sites/nanemau-ghat.jpg" alt="Nanemau Ghat" 
+                                 onerror="this.src='../images/placeholder-ghat.jpg'">
+                            <div class="site-badge ghat">Ghat</div>
+                        </div>
+                        <div class="site-content">
+                            <h3>🌊 Nanemau Ghat</h3>
+                            <h4>अनेमऊ घाट</h4>
+                            <div class="site-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Gomti Riverbank, Anemau Area</span>
+                            </div>
+                            <div class="ghat-uses">
+                                <strong>Primary Uses:</strong>
+                                <div class="use-tags">
+                                    <span class="use-tag">Funeral Rites</span>
+                                    <span class="use-tag">Religious Immersion</span>
+                                    <span class="use-tag">Ceremonial Activities</span>
+                                </div>
+                            </div>
+                            <p class="site-description">
+                                Sacred ghat used for performing funeral rites and religious immersion ceremonies. 
+                                The location provides a serene environment for final rites and spiritual observances.
+                            </p>
+                            <button class="view-details-btn" onclick="showSiteDetails('anemau-ghat')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="river-wave-bottom"></div>
+            </div>
+
+            <!-- MOSQUES SECTION -->
+            <div id="mosques" class="category-section">
+                <div class="section-header">
+                    <div class="header-icon">🕌</div>
+                    <div class="header-text">
+                        <h2>Mosques | मस्जिद</h2>
+                        <p>Places of Islamic worship and community gathering</p>
+                    </div>
+                </div>
+
+                <div class="harmony-note">
+                    <i class="fas fa-hands-helping"></i>
+                    <p>
+                        <strong>Religious Harmony:</strong> Our village takes pride in its communal harmony where 
+                        people of all faiths live together peacefully, respecting each other's beliefs and traditions.
+                    </p>
+                </div>
+
+                <div class="sites-grid">
+                    <!-- Madina Masjid -->
+                    <div class="site-card" data-site="madina-masjid">
+                        <div class="site-image">
+                            <img src="../images/sites/madina-masjid.jpg" alt="Madina Masjid" 
+                                 onerror="this.src='../images/placeholder-mosque.jpg'">
+                            <div class="site-badge mosque">Mosque</div>
+                        </div>
+                        <div class="site-content">
+                            <h3>🕌 Madina Masjid</h3>
+                            <h4>मदीना मस्जिद</h4>
+                            <div class="site-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Maksoodan</span>
+                            </div>
+                            <div class="mosque-info">
+                                <div class="info-item">
+                                    <strong>Established:</strong> [Year if known]
+                                </div>
+                                <div class="info-item">
+                                    <strong>Prayer Times:</strong> Five daily prayers (Namaz)
+                                </div>
+                            </div>
+                            <p class="site-description">
+                                Central mosque serving the Muslim community of the village. The mosque hosts daily prayers 
+                                and becomes a focal point during Eid celebrations, bringing the community together in 
+                                worship and celebration.
+                            </p>
+                            <div class="site-festivals">
+                                <strong>Major Occasions:</strong>
+                                <span class="festival-tag">Eid-ul-Fitr</span>
+                                <span class="festival-tag">Eid-ul-Adha</span>
+                                <span class="festival-tag">Jummah Prayer</span>
+                                <span class="festival-tag">Ramadan</span>
+                            </div>
+                            <div class="community-role">
+                                <strong>Community Role:</strong> The mosque serves not only as a place of worship but also 
+                                as a center for Islamic education, community gatherings, and social welfare activities.
+                            </div>
+                            <button class="view-details-btn" onclick="showSiteDetails('madina-masjid')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAP SECTION -->
+            <div id="map" class="map-section">
+                <div class="section-header">
+                    <div class="header-icon">🗺️</div>
+                    <div class="header-text">
+                        <h2>Religious Sites Map | धार्मिक स्थल मानचित्र</h2>
+                        <p>Interactive map showing all temples, ghats, and mosques</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.123456789!2d82.123456!3d26.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA3JzI0LjQiTiA4MsKwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                        width="100%" 
+                        height="500" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-legend">
+                        <h4>Map Legend:</h4>
+                        <div class="legend-items">
+                            <span class="legend-item"><i class="fas fa-om" style="color: #ff9933;"></i> Temples</span>
+                            <span class="legend-item"><i class="fas fa-water" style="color: #2196f3;"></i> Ghats</span>
+                            <span class="legend-item"><i class="fas fa-mosque" style="color: #4caf50;"></i> Mosques</span>
+                        </div>
+                    </div>
+                    <p class="map-note">
+                        <i class="fas fa-info-circle"></i> 
+                        Note: Update the map with actual GPS coordinates of religious sites for accurate location display
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer Note -->
+            <div class="heritage-footer">
+                <div class="footer-icon">🙏</div>
+                <p class="footer-message">
+                    Gram Sabha Maksoodan takes pride in its spiritual diversity and sacred heritage 
+                    preserved across generations.
+                </p>
+                <p class="footer-message-hindi">
+                    ग्राम सभा मकसूदन अपनी आध्यात्मिक विविधता और पीढ़ियों से संरक्षित पवित्र विरासत पर गर्व करती है।
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Site Details Modal -->
+    <div id="siteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Site details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gram Sabha Maksoodan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/religious-sites.js"></script>
+</body>
+</html>

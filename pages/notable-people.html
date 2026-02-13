@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notable People | Gram Sabha Maksoodan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/notable-people.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="../images/emblem.png" alt="Government Emblem" class="emblem">
+                        <div class="title-section">
+                            <h1>ग्राम सभा मकसूदन</h1>
+                            <h2>Gram Sabha Maksoodan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="notable-people-section">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1><i class="fas fa-award"></i> Notable People of Maksoodan</h1>
+                <h2>मकसूदन के विशिष्ट व्यक्तित्व</h2>
+                <p class="intro-text">
+                    This page is dedicated to honoring the distinguished sons and daughters of Gram Sabha Maksoodan 
+                    who have made significant contributions to society, nation, village development, education, 
+                    defense services, politics, sports, social work, and cultural heritage. Their dedication and 
+                    achievements continue to inspire generations.
+                </p>
+                <p class="intro-text-hindi">
+                    यह पृष्ठ ग्राम सभा मकसूदन के उन विशिष्ट सपूतों और सपूतियों को समर्पित है जिन्होंने समाज, राष्ट्र, 
+                    ग्राम विकास, शिक्षा, रक्षा सेवाओं, राजनीति, खेल, समाज सेवा और सांस्कृतिक विरासत में महत्वपूर्ण योगदान दिया है।
+                </p>
+            </div>
+
+            <!-- Search & Filter Section -->
+            <div class="filter-section">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search by name | नाम से खोजें">
+                </div>
+                
+                <div class="filter-controls">
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">All Categories | सभी श्रेणियां</option>
+                        <option value="defense">Defense Services | रक्षा सेवाएं</option>
+                        <option value="education">Education & Teaching | शिक्षा</option>
+                        <option value="politics">Politics & Governance | राजनीति</option>
+                        <option value="social">Social Workers | समाज सेवक</option>
+                        <option value="sports">Sports | खेल</option>
+                        <option value="freedom">Freedom Fighters | स्वतंत्रता सेनानी</option>
+                        <option value="religious">Religious Leaders | धार्मिक नेता</option>
+                        <option value="other">Other Distinguished | अन्य विशिष्ट</option>
+                    </select>
+
+                    <select id="areaFilter" class="filter-select">
+                        <option value="all">All Areas | सभी क्षेत्र</option>
+                        <option value="maksoodan">Maksoodan | मकसूदन</option>
+                        <option value="jafarapur">Jafarapur | जफरापुर</option>
+                        <option value="misgrapur">Mishrapur | मिश्रपुर</option>
+                        <option value="kharahna">Kharahna | खरहना</option>
+                        <option value="rallhikapura">Rallhikapura | राल्ही का पूरा</option>
+                        <option value="jiyanpur">Jiyanpur | जियनपुर</option>
+                        <option value="jhaliya">Jhaliya | झलिया</option>
+                        <option value="barraiya">Barraiya | बर्राइया</option>
+                    </select>
+
+                    <select id="statusFilter" class="filter-select">
+                        <option value="all">All Status | सभी स्थिति</option>
+                        <option value="living">Living | जीवित</option>
+                        <option value="deceased">Late | स्वर्गीय</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Special Tribute Section - Martyrs & Heroes -->
+            <div class="tribute-section">
+                <div class="tribute-header">
+                    <i class="fas fa-medal"></i>
+                    <h2>Martyrs & National Service Heroes</h2>
+                    <h3>शहीद और राष्ट्रीय सेवा के नायक</h3>
+                </div>
+                <p class="tribute-message">
+                    We bow in reverence to the brave hearts who made the supreme sacrifice for our nation. 
+                    Their valor and dedication will forever remain etched in the annals of our village's proud history.
+                </p>
+                
+                <div class="heroes-grid" id="heroesGrid">
+                    <!-- Hero cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Defense Services Category -->
+            <div class="category-section" data-category="defense">
+                <div class="category-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h2>Defense Services</h2>
+                    <h3>रक्षा सेवाएं (सेना, नौसेना, वायु सेना, अर्धसैनिक बल)</h3>
+                </div>
+                <div class="people-grid" id="defenseGrid">
+                    <!-- Profile cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Education & Teaching Category -->
+            <div class="category-section" data-category="education">
+                <div class="category-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h2>Education & Teaching</h2>
+                    <h3>शिक्षा और अध्यापन</h3>
+                </div>
+                <div class="people-grid" id="educationGrid">
+                    <!-- Profile cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Politics & Governance Category -->
+            <div class="category-section" data-category="politics">
+                <div class="category-header">
+                    <i class="fas fa-landmark"></i>
+                    <h2>Politics & Governance</h2>
+                    <h3>राजनीति और शासन</h3>
+                </div>
+                <div class="people-grid" id="politicsGrid">
+                    <!-- Profile cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Social Workers Category -->
+            <div class="category-section" data-category="social">
+                <div class="category-header">
+                    <i class="fas fa-hands-helping"></i>
+                    <h2>Social Workers</h2>
+                    <h3>समाज सेवक</h3>
+                </div>
+                <div class="people-grid" id="socialGrid">
+                    <!-- Profile cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Sports Personalities Category -->
+            <div class="category-section" data-category="sports">
+                <div class="category-header">
+                    <i class="fas fa-trophy"></i>
+                    <h2>Sports Personalities</h2>
+                    <h3>खेल व्यक्तित्व</h3>
+                </div>
+                <div class="people-grid" id="sportsGrid">
+                    <!-- Profile cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Freedom Fighters Category -->
+            <div class="category-section" data-category="freedom">
+                <div class="category-header">
+                    <i class="fas fa-flag"></i>
+                    <h2>Freedom Fighters & Historical Figures</h2>
+                    <h3>स्वतंत्रता सेनानी और ऐतिहासिक व्यक्तित्व</h3>
+                </div>
+                <div class="people-grid" id="freedomGrid">
+                    <!-- Profile cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Religious Leaders Category -->
+            <div class="category-section" data-category="religious">
+                <div class="category-header">
+                    <i class="fas fa-om"></i>
+                    <h2>Religious Leaders & Saints</h2>
+                    <h3>धार्मिक नेता और संत</h3>
+                </div>
+                <div class="people-grid" id="religiousGrid">
+                    <!-- Profile cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Other Distinguished Citizens Category -->
+            <div class="category-section" data-category="other">
+                <div class="category-header">
+                    <i class="fas fa-star"></i>
+                    <h2>Other Distinguished Citizens</h2>
+                    <h3>अन्य विशिष्ट नागरिक</h3>
+                </div>
+                <div class="people-grid" id="otherGrid">
+                    <!-- Profile cards will be populated here -->
+                </div>
+            </div>
+
+            <!-- Footer Tribute -->
+            <div class="footer-tribute">
+                <p>
+                    <i class="fas fa-heart"></i>
+                    This page is dedicated to the proud sons and daughters of Gram Sabha Maksoodan 
+                    whose contributions continue to inspire future generations.
+                </p>
+                <p class="hindi-tribute">
+                    यह पृष्ठ ग्राम सभा मकसूदन के गौरवशाली सपूतों और सपूतियों को समर्पित है 
+                    जिनका योगदान आने वाली पीढ़ियों को प्रेरित करता रहेगा।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Detail Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Profile details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gram Sabha Maksoodan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/notable-people.js"></script>
+</body>
+</html>

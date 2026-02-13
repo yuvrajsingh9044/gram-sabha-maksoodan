@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Portal | Gram Sabha Maksoodan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .complaint-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .btn-submit {
+            background: #283593;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn-submit:hover {
+            background: #1a237e;
+        }
+        .info-box {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #283593;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="../images/emblem.png" alt="Government Emblem" class="emblem">
+                        <div class="title-section">
+                            <h1>ग्राम सभा मकसूदन</h1>
+                            <h2>Gram Sabha Maksoodan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-content" style="padding: 60px 0; background: #f9f9f9;">
+        <div class="container">
+            <h1 style="text-align: center; color: #1a237e; margin-bottom: 20px;">
+                <i class="fas fa-exclamation-circle"></i> शिकायत पोर्टल
+            </h1>
+            <h2 style="text-align: center; color: #d84315; margin-bottom: 40px;">
+                Complaint Portal
+            </h2>
+
+            <div class="info-box">
+                <h3 style="color: #1a237e; margin-bottom: 10px;">
+                    <i class="fas fa-info-circle"></i> महत्वपूर्ण जानकारी | Important Information
+                </h3>
+                <ul style="line-height: 2; color: #555;">
+                    <li>आपकी शिकायत 48 घंटे में दर्ज की जाएगी | Your complaint will be registered within 48 hours</li>
+                    <li>शिकायत संख्या SMS द्वारा भेजी जाएगी | Complaint number will be sent via SMS</li>
+                    <li>गंभीर मामलों को प्राथमिकता दी जाएगी | Serious matters will be prioritized</li>
+                    <li>सभी शिकायतें गोपनीय रखी जाएंगी | All complaints will be kept confidential</li>
+                </ul>
+            </div>
+
+            <form class="complaint-form" id="complaintForm">
+                <h3 style="color: #1a237e; margin-bottom: 20px; text-align: center;">
+                    शिकायत फॉर्म | Complaint Form
+                </h3>
+
+                <div class="form-group">
+                    <label for="name">नाम | Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">मोबाइल नंबर | Mobile Number *</label>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">ईमेल | Email (Optional)</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="area">क्षेत्र | Area *</label>
+                    <select id="area" name="area" required>
+                        <option value="">-- चुनें | Select --</option>
+                        <option value="maksoodan">Maksoodan | मकसूदन</option>
+                        <option value="jafarapur">Jafarapur | जाफरापुर</option>
+                        <option value="misgrapur">Misgrapur | मिसग्रापुर</option>
+                        <option value="kharahna">Kharahna | खराहना</option>
+                        <option value="rallhikapura">Rallhikapura | रल्लहिकपुरा</option>
+                        <option value="jiyanpur">Jiyanpur | जियानपुर</option>
+                        <option value="jhaliya">Jhaliya | झलिया</option>
+                        <option value="barraiya">Barraiya | बर्राइया</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">शिकायत श्रेणी | Complaint Category *</label>
+                    <select id="category" name="category" required>
+                        <option value="">-- चुनें | Select --</option>
+                        <option value="water">जल आपूर्ति | Water Supply</option>
+                        <option value="electricity">बिजली | Electricity</option>
+                        <option value="road">सड़क | Road</option>
+                        <option value="drainage">जल निकासी | Drainage</option>
+                        <option value="sanitation">स्वच्छता | Sanitation</option>
+                        <option value="street-light">स्ट्रीट लाइट | Street Light</option>
+                        <option value="ration">राशन | Ration</option>
+                        <option value="pension">पेंशन | Pension</option>
+                        <option value="certificate">प्रमाण पत्र | Certificate</option>
+                        <option value="other">अन्य | Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">विषय | Subject *</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">विस्तृत विवरण | Detailed Description *</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">प्राथमिकता | Priority *</label>
+                    <select id="priority" name="priority" required>
+                        <option value="normal">सामान्य | Normal</option>
+                        <option value="high">उच्च | High</option>
+                        <option value="urgent">अत्यावश्यक | Urgent</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required>
+                        मैं पुष्टि करता/करती हूं कि दी गई जानकारी सत्य है | I confirm that the information provided is true
+                    </label>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> शिकायत दर्ज करें | Submit Complaint
+                    </button>
+                </div>
+            </form>
+
+            <div style="max-width: 800px; margin: 40px auto; background: #fff3cd; padding: 20px; border-radius: 5px;">
+                <h3 style="color: #d84315; margin-bottom: 10px;">
+                    <i class="fas fa-phone"></i> आपातकालीन संपर्क | Emergency Contact
+                </h3>
+                <p style="line-height: 2;">
+                    <strong>Gram Pradhan:</strong> +91-XXXXXXXXXX<br>
+                    <strong>Gram Sachiv:</strong> +91-XXXXXXXXXX<br>
+                    <strong>Police (Lambhua):</strong> 100<br>
+                    <strong>Ambulance:</strong> 108
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gram Sabha Maksoodan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('complaintForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('शिकायत दर्ज करने के लिए धन्यवाद। आपकी शिकायत संख्या SMS द्वारा भेजी जाएगी।\n\nThank you for submitting your complaint. Your complaint number will be sent via SMS.\n\nNote: Backend implementation required for actual submission.');
+            // In production, send data to server
+        });
+    </script>
+</body>
+</html>

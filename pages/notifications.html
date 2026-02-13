@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | Gram Sabha Maksoodan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="../images/emblem.png" alt="Government Emblem" class="emblem">
+                        <div class="title-section">
+                            <h1>ग्राम सभा मकसूदन</h1>
+                            <h2>Gram Sabha Maksoodan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="notifications-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <div class="banner-icon"><i class="fas fa-bell"></i></div>
+            <h1>Village Notifications & Public Notices</h1>
+            <h2>ग्राम सूचनाएं और सार्वजनिक नोटिस</h2>
+            <p class="subtitle">Official Announcements of Gram Sabha Maksoodan</p>
+            <p class="subtitle-hindi">ग्राम सभा मकसूदन की आधिकारिक घोषणाएं</p>
+        </div>
+    </section>
+
+    <!-- Latest Notices Ticker -->
+    <div class="ticker-container">
+        <div class="ticker-label">
+            <i class="fas fa-bullhorn"></i> Latest Announcements
+        </div>
+        <div class="ticker-content">
+            <div class="ticker-text" id="tickerText">
+                <!-- Ticker will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <section class="notifications-section">
+        <div class="container">
+
+            <div class="notifications-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- Search Box -->
+                    <div class="search-widget">
+                        <h3><i class="fas fa-search"></i> Search Notices</h3>
+                        <input type="text" id="searchInput" placeholder="Search by title, date, or department...">
+                        <button class="search-btn" onclick="searchNotices()">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="filter-widget">
+                        <h3><i class="fas fa-filter"></i> Filter by Category</h3>
+                        <div class="category-list">
+                            <button class="category-btn active" data-category="all">
+                                <i class="fas fa-list"></i> All Notices
+                            </button>
+                            <button class="category-btn" data-category="panchayat">
+                                <i class="fas fa-building"></i> Panchayat Notices
+                            </button>
+                            <button class="category-btn" data-category="schemes">
+                                <i class="fas fa-clipboard-list"></i> Scheme Updates
+                            </button>
+                            <button class="category-btn" data-category="development">
+                                <i class="fas fa-tools"></i> Development Projects
+                            </button>
+                            <button class="category-btn" data-category="meetings">
+                                <i class="fas fa-users"></i> Meeting Announcements
+                            </button>
+                            <button class="category-btn" data-category="tenders">
+                                <i class="fas fa-file-contract"></i> Tender Notices
+                            </button>
+                            <button class="category-btn" data-category="election">
+                                <i class="fas fa-vote-yea"></i> Election Notices
+                            </button>
+                            <button class="category-btn" data-category="education">
+                                <i class="fas fa-graduation-cap"></i> Education
+                            </button>
+                            <button class="category-btn" data-category="health">
+                                <i class="fas fa-heartbeat"></i> Health & Vaccination
+                            </button>
+                            <button class="category-btn" data-category="emergency">
+                                <i class="fas fa-exclamation-triangle"></i> Emergency Alerts
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Archive -->
+                    <div class="archive-widget">
+                        <h3><i class="fas fa-archive"></i> Archive</h3>
+                        <select id="archiveYear" onchange="filterByYear(this.value)">
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="main-content">
+                    <!-- Urgent Notices Section -->
+                    <div class="urgent-section" id="urgentSection">
+                        <div class="urgent-header">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h2>Urgent / Featured Notices</h2>
+                            <span class="urgent-badge">महत्वपूर्ण</span>
+                        </div>
+                        <div class="urgent-notices" id="urgentNotices">
+                            <!-- Urgent notices will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- All Notifications -->
+                    <div class="all-notifications">
+                        <div class="section-header">
+                            <h2><i class="fas fa-bell"></i> All Notifications</h2>
+                            <div class="sort-options">
+                                <label>Sort by:</label>
+                                <select id="sortBy" onchange="sortNotifications(this.value)">
+                                    <option value="date-desc">Newest First</option>
+                                    <option value="date-asc">Oldest First</option>
+                                    <option value="title">Title (A-Z)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="notifications-list" id="notificationsList">
+                            <!-- Notifications will be populated by JavaScript -->
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="pagination" id="pagination">
+                            <!-- Pagination will be added by JavaScript -->
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Footer Note -->
+            <div class="notifications-footer">
+                <div class="footer-icon"><i class="fas fa-info-circle"></i></div>
+                <p class="footer-message">
+                    <strong>Important Notice:</strong> All notices published here are official communications of 
+                    Gram Sabha Maksoodan. Citizens are advised to check regularly for updates.
+                </p>
+                <p class="footer-message-hindi">
+                    <strong>महत्वपूर्ण सूचना:</strong> यहां प्रकाशित सभी नोटिस ग्राम सभा मकसूदन के आधिकारिक संचार हैं। 
+                    नागरिकों को सलाह दी जाती है कि वे नियमित रूप से अपडेट के लिए जांच करें।
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Notification Detail Modal -->
+    <div id="notificationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Notification details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gram Sabha Maksoodan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/notifications.js"></script>
+</body>
+</html>

@@ -1,0 +1,775 @@
+/* Development Dashboard Styles */
+
+.dashboard-section {
+    background: #f5f5f5;
+    padding: 0 0 60px 0;
+    margin-top: 0;
+}
+
+/* Banner */
+.dashboard-banner {
+    position: relative;
+    height: 450px;
+    background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+    background-image: url('../images/development-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 35, 126, 0.9);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+}
+
+.banner-icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.banner-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.banner-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.subtitle-hindi {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Overview Counters */
+.overview-counters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: -80px 20px 40px 20px;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.counter-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-left: 5px solid;
+    transition: all 0.3s;
+}
+
+.counter-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.counter-card.total-projects {
+    border-left-color: #283593;
+}
+
+.counter-card.completed {
+    border-left-color: #4caf50;
+}
+
+.counter-card.ongoing {
+    border-left-color: #ff9800;
+}
+
+.counter-card.upcoming {
+    border-left-color: #2196f3;
+}
+
+.counter-card.funds {
+    border-left-color: #9c27b0;
+}
+
+.counter-card.beneficiaries {
+    border-left-color: #f44336;
+}
+
+.counter-icon {
+    font-size: 50px;
+}
+
+.counter-card.total-projects .counter-icon { color: #283593; }
+.counter-card.completed .counter-icon { color: #4caf50; }
+.counter-card.ongoing .counter-icon { color: #ff9800; }
+.counter-card.upcoming .counter-icon { color: #2196f3; }
+.counter-card.funds .counter-icon { color: #9c27b0; }
+.counter-card.beneficiaries .counter-icon { color: #f44336; }
+
+.counter-data h3 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.counter-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1a237e;
+    margin-bottom: 5px;
+}
+
+.counter-label {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Section Header */
+.section-header {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px 10px 0 0;
+    border-left: 6px solid #ff9933;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 0;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    color: #1a237e;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-header i {
+    color: #ff9933;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #d84315;
+    margin-top: 8px;
+}
+
+/* Indicators Section */
+.indicators-section {
+    margin: 40px 0;
+}
+
+.indicators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.indicator-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 4px solid;
+    transition: all 0.3s;
+}
+
+.indicator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.indicator-card.achieved { border-top-color: #4caf50; }
+.indicator-card.in-progress { border-top-color: #ff9800; }
+.indicator-card.needs-attention { border-top-color: #f44336; }
+
+.indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.indicator-icon {
+    font-size: 35px;
+}
+
+.indicator-card.achieved .indicator-icon { color: #4caf50; }
+.indicator-card.in-progress .indicator-icon { color: #ff9800; }
+.indicator-card.needs-attention .indicator-icon { color: #f44336; }
+
+.indicator-title h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.indicator-title span {
+    font-size: 13px;
+    color: #999;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 1s ease;
+}
+
+.indicator-card.achieved .progress-bar {
+    background: linear-gradient(90deg, #4caf50, #66bb6a);
+}
+
+.indicator-card.in-progress .progress-bar {
+    background: linear-gradient(90deg, #ff9800, #ffb74d);
+}
+
+.indicator-card.needs-attention .progress-bar {
+    background: linear-gradient(90deg, #f44336, #ef5350);
+}
+
+.indicator-percentage {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator-card.achieved .indicator-percentage { color: #4caf50; }
+.indicator-card.in-progress .indicator-percentage { color: #ff9800; }
+.indicator-card.needs-attention .indicator-percentage { color: #f44336; }
+
+.indicator-status {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Projects Master */
+.projects-master {
+    margin: 40px 0;
+}
+
+.project-tabs {
+    display: flex;
+    gap: 10px;
+    padding: 20px 30px 0;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 15px 30px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab-btn:hover {
+    background: #e0e0e0;
+}
+
+.tab-btn.active {
+    background: white;
+    color: #1a237e;
+    border-bottom: 3px solid #ff9933;
+}
+
+.tab-content {
+    display: none;
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    background: #e0e0e0;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.project-badge.completed { background: #4caf50; }
+.project-badge.ongoing { background: #ff9800; }
+.project-badge.upcoming { background: #2196f3; }
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    font-size: 20px;
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-progress {
+    margin: 15px 0;
+}
+
+.project-progress-bar {
+    width: 100%;
+    height: 15px;
+    background: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.project-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff9800, #ffb74d);
+    transition: width 1s ease;
+}
+
+/* Scheme Tracker */
+.scheme-tracker {
+    margin: 40px 0;
+}
+
+.schemes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.scheme-card {
+    background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #283593;
+}
+
+.scheme-card h4 {
+    font-size: 18px;
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.scheme-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scheme-stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background: white;
+    border-radius: 5px;
+}
+
+.scheme-stat.sanctioned { border-left: 3px solid #2196f3; }
+.scheme-stat.completed { border-left: 3px solid #4caf50; }
+.scheme-stat.pending { border-left: 3px solid #ff9800; }
+
+/* Financial Panel */
+.financial-panel {
+    margin: 40px 0;
+}
+
+.financial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background: white;
+}
+
+.financial-card {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 4px solid #2196f3;
+}
+
+.financial-card h3 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.amount {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1a237e;
+    margin-bottom: 8px;
+}
+
+.financial-card span {
+    font-size: 14px;
+    color: #999;
+}
+
+.chart-container {
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Area Development */
+.area-development {
+    margin: 40px 0;
+}
+
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.area-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 4px solid #ff9933;
+}
+
+.area-card h3 {
+    font-size: 22px;
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+.area-list {
+    list-style: none;
+    padding: 0;
+}
+
+.area-list li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 5px;
+    border-left: 3px solid #4caf50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Infrastructure Highlights */
+.infrastructure-highlights {
+    margin: 40px 0;
+}
+
+.infra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.infra-card {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 4px solid #ff9800;
+}
+
+.infra-card i {
+    font-size: 40px;
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.infra-card h4 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.infra-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    margin: 40px 0;
+}
+
+.gallery-tabs {
+    display: flex;
+    gap: 10px;
+    padding: 20px 30px 0;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.gallery-tab {
+    padding: 10px 20px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.gallery-tab:hover {
+    background: #e0e0e0;
+}
+
+.gallery-tab.active {
+    background: #ff9933;
+    color: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Reports Section */
+.reports-section {
+    margin: 40px 0;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.report-card {
+    background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border-top: 4px solid #283593;
+    transition: all 0.3s;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.report-card i {
+    font-size: 50px;
+    color: #283593;
+    margin-bottom: 15px;
+}
+
+.report-card h4 {
+    font-size: 18px;
+    color: #1a237e;
+    margin-bottom: 8px;
+}
+
+.report-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff9933;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Footer */
+.transparency-footer {
+    background: linear-gradient(135deg, #1a237e, #283593);
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    margin-top: 40px;
+}
+
+.footer-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.footer-message,
+.footer-message-hindi {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.footer-message-hindi {
+    font-size: 16px;
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .overview-counters {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    
+    .indicators-grid,
+    .projects-grid,
+    .schemes-grid,
+    .area-grid,
+    .infra-grid,
+    .gallery-grid,
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-tabs,
+    .gallery-tabs {
+        flex-direction: column;
+    }
+}

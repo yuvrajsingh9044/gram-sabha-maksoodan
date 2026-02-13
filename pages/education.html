@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Infrastructure | Gram Sabha Maksoodan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/education.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="../images/emblem.png" alt="Government Emblem" class="emblem">
+                        <div class="title-section">
+                            <h1>ग्राम सभा मकसूदन</h1>
+                            <h2>Gram Sabha Maksoodan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="education-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <div class="banner-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h1>Education Infrastructure – Maksoodan</h1>
+            <h2>शिक्षा बुनियादी ढांचा - मकसूदन</h2>
+            <p class="subtitle">Empowering Future Generations Through Learning</p>
+            <p class="subtitle-hindi">सीखने के माध्यम से भावी पीढ़ियों को सशक्त बनाना</p>
+        </div>
+    </section>
+
+    <section class="education-section">
+        <div class="container">
+
+            <!-- Education Overview -->
+            <div class="overview-stats">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-school"></i></div>
+                    <div class="stat-number" data-target="3">3</div>
+                    <div class="stat-label">Village Schools</div>
+                    <div class="stat-label-hindi">ग्राम विद्यालय</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-number" data-target="450">0</div>
+                    <div class="stat-label">Total Students</div>
+                    <div class="stat-label-hindi">कुल छात्र</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Teaching Staff</div>
+                    <div class="stat-label-hindi">शिक्षण स्टाफ</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-baby"></i></div>
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Anganwadi Centers</div>
+                    <div class="stat-label-hindi">आंगनवाड़ी केंद्र</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-university"></i></div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Nearby Institutes</div>
+                    <div class="stat-label-hindi">निकटवर्ती संस्थान</div>
+                </div>
+            </div>
+
+            <!-- Village Schools Section -->
+            <div class="section-header">
+                <h2><i class="fas fa-school-flag"></i> Schools Within Gram Sabha Maksoodan</h2>
+                <p>ग्राम सभा मकसूदन के विद्यालय</p>
+            </div>
+
+            <div class="schools-container">
+                <!-- Primary School Maksoodan -->
+                <div class="school-card primary">
+                    <div class="school-header">
+                        <div class="school-icon"><i class="fas fa-school"></i></div>
+                        <div class="school-info">
+                            <h3>Primary School Maksoodan</h3>
+                            <p class="school-hindi">प्राथमिक विद्यालय मकसूदन</p>
+                            <span class="school-badge">Classes 1-5</span>
+                        </div>
+                    </div>
+                    <div class="school-body">
+                        <div class="school-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Maksoodan</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>UP Basic Education Board</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-language"></i>
+                                <span>Medium: Hindi</span>
+                            </div>
+                        </div>
+                        <button class="view-school-btn" onclick="showSchoolDetails('primary-maksoodan')">
+                            <i class="fas fa-eye"></i> View Full Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Upper Primary School Maksoodan -->
+                <div class="school-card upper-primary">
+                    <div class="school-header">
+                        <div class="school-icon"><i class="fas fa-school"></i></div>
+                        <div class="school-info">
+                            <h3>Upper Primary School Maksoodan</h3>
+                            <p class="school-hindi">उच्च प्राथमिक विद्यालय मकसूदन</p>
+                            <span class="school-badge">Classes 6-8</span>
+                        </div>
+                    </div>
+                    <div class="school-body">
+                        <div class="school-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mishrapur, Maksoodan</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>UP Board</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-language"></i>
+                                <span>Medium: Hindi</span>
+                            </div>
+                        </div>
+                        <button class="view-school-btn" onclick="showSchoolDetails('upper-primary-maksoodan')">
+                            <i class="fas fa-eye"></i> View Full Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Primary School Jafarapur -->
+                <div class="school-card primary">
+                    <div class="school-header">
+                        <div class="school-icon"><i class="fas fa-school"></i></div>
+                        <div class="school-info">
+                            <h3>Primary School Jafarapur</h3>
+                            <p class="school-hindi">प्राथमिक विद्यालय जाफराबाद</p>
+                            <span class="school-badge">Classes 1-5</span>
+                        </div>
+                    </div>
+                    <div class="school-body">
+                        <div class="school-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jafarapur, Maksoodan</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>UP Basic Education Board</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-language"></i>
+                                <span>Medium: Hindi</span>
+                            </div>
+                        </div>
+                        <button class="view-school-btn" onclick="showSchoolDetails('primary-jafarapur')">
+                            <i class="fas fa-eye"></i> View Full Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anganwadi Section -->
+            <div class="section-header">
+                <h2><i class="fas fa-baby-carriage"></i> Pre-Primary Education</h2>
+                <p>पूर्व-प्राथमिक शिक्षा</p>
+            </div>
+
+            <div class="anganwadi-container">
+                <div class="anganwadi-card">
+                    <div class="anganwadi-header">
+                        <div class="anganwadi-icon"><i class="fas fa-baby"></i></div>
+                        <div>
+                            <h3>Anganwadi Kendra</h3>
+                            <p class="anganwadi-hindi">आंगनवाड़ी केंद्र</p>
+                        </div>
+                    </div>
+                    <div class="anganwadi-body">
+                        <div class="location-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gram Sabha Maksoodan</span>
+                        </div>
+                        <div class="workers-section">
+                            <h4>Workers | कार्यकर्ता</h4>
+                            <div class="worker-list">
+                                <div class="worker-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Pushpa Singh</span>
+                                </div>
+                                <div class="worker-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Geeta Singh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-section">
+                            <h4>Services | सेवाएं</h4>
+                            <ul class="services-list">
+                                <li><i class="fas fa-check-circle"></i> Early Childhood Education</li>
+                                <li><i class="fas fa-check-circle"></i> Nutrition Programs</li>
+                                <li><i class="fas fa-check-circle"></i> Health Checkups</li>
+                                <li><i class="fas fa-check-circle"></i> Vaccination Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nearby Educational Institutes -->
+            <div class="section-header">
+                <h2><i class="fas fa-university"></i> Nearby Schools & Colleges</h2>
+                <p>निकटवर्ती विद्यालय और महाविद्यालय</p>
+            </div>
+
+            <div class="institutes-container">
+                <div class="institute-card">
+                    <div class="institute-header">
+                        <div class="institute-icon"><i class="fas fa-building-columns"></i></div>
+                        <div class="institute-badge cbse">CBSE</div>
+                    </div>
+                    <div class="institute-body">
+                        <h3>Saraswati Vidya Mandir Sr. Sec. School</h3>
+                        <p class="institute-location">Vivekanand Nagar, Sultanpur</p>
+                        <div class="institute-details">
+                            <div class="detail-row">
+                                <span class="label">Distance:</span>
+                                <span class="value">~25 km</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Board:</span>
+                                <span class="value">CBSE</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Medium:</span>
+                                <span class="value">English</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Level:</span>
+                                <span class="value">Senior Secondary</span>
+                            </div>
+                        </div>
+                        <div class="institute-note">
+                            <i class="fas fa-star"></i>
+                            <span>Top school in district</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="institute-card">
+                    <div class="institute-header">
+                        <div class="institute-icon"><i class="fas fa-building-columns"></i></div>
+                        <div class="institute-badge cbse">CBSE</div>
+                    </div>
+                    <div class="institute-body">
+                        <h3>S N Convent Sr. Sec. School</h3>
+                        <p class="institute-location">Lambhua</p>
+                        <div class="institute-details">
+                            <div class="detail-row">
+                                <span class="label">Distance:</span>
+                                <span class="value">~5 km</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Board:</span>
+                                <span class="value">CBSE</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Medium:</span>
+                                <span class="value">English</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Level:</span>
+                                <span class="value">Senior Secondary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="institute-card">
+                    <div class="institute-header">
+                        <div class="institute-icon"><i class="fas fa-building-columns"></i></div>
+                        <div class="institute-badge cbse">CBSE</div>
+                    </div>
+                    <div class="institute-body">
+                        <h3>All Saints Public School</h3>
+                        <p class="institute-location">Lambhua</p>
+                        <div class="institute-details">
+                            <div class="detail-row">
+                                <span class="label">Distance:</span>
+                                <span class="value">~5 km</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Board:</span>
+                                <span class="value">CBSE</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Medium:</span>
+                                <span class="value">English</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Level:</span>
+                                <span class="value">Secondary / Sr. Secondary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="institute-card">
+                    <div class="institute-header">
+                        <div class="institute-icon"><i class="fas fa-building-columns"></i></div>
+                        <div class="institute-badge up-board">UP Board</div>
+                    </div>
+                    <div class="institute-body">
+                        <h3>Sarvodaya Inter College</h3>
+                        <p class="institute-location">Lambhua</p>
+                        <div class="institute-details">
+                            <div class="detail-row">
+                                <span class="label">Distance:</span>
+                                <span class="value">~5 km</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Board:</span>
+                                <span class="value">UP Board</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Medium:</span>
+                                <span class="value">English & Hindi</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Level:</span>
+                                <span class="value">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="institute-card">
+                    <div class="institute-header">
+                        <div class="institute-icon"><i class="fas fa-building-columns"></i></div>
+                        <div class="institute-badge up-board">UP Board</div>
+                    </div>
+                    <div class="institute-body">
+                        <h3>Swami Vivekanand Inter College</h3>
+                        <p class="institute-location">Gopalpur Madaiya, Lambhua</p>
+                        <div class="institute-details">
+                            <div class="detail-row">
+                                <span class="label">Distance:</span>
+                                <span class="value">~9 km</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Board:</span>
+                                <span class="value">UP Board</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Medium:</span>
+                                <span class="value">English & Hindi</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Level:</span>
+                                <span class="value">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accessibility Info -->
+            <div class="section-header">
+                <h2><i class="fas fa-bus"></i> Accessibility & Transport</h2>
+                <p>पहुंच और परिवहन</p>
+            </div>
+
+            <div class="accessibility-container">
+                <div class="access-card">
+                    <div class="access-icon"><i class="fas fa-road"></i></div>
+                    <h3>Road Connectivity</h3>
+                    <p class="access-hindi">सड़क संपर्क</p>
+                    <p class="access-desc">Well-connected roads to Lambhua and Sultanpur</p>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon"><i class="fas fa-bus-alt"></i></div>
+                    <h3>Bus Availability</h3>
+                    <p class="access-hindi">बस उपलब्धता</p>
+                    <p class="access-desc">Regular bus services to nearby educational hubs</p>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon"><i class="fas fa-motorcycle"></i></div>
+                    <h3>Private Transport</h3>
+                    <p class="access-hindi">निजी परिवहन</p>
+                    <p class="access-desc">Auto-rickshaw and private vehicles available</p>
+                </div>
+            </div>
+
+            <!-- Footer Note -->
+            <div class="education-footer">
+                <div class="footer-icon"><i class="fas fa-book-reader"></i></div>
+                <p class="footer-message">
+                    Education is the foundation of Gram Sabha Maksoodan's social and economic development, 
+                    nurturing young minds for a brighter future.
+                </p>
+                <p class="footer-message-hindi">
+                    शिक्षा ग्राम सभा मकसूदन के सामाजिक और आर्थिक विकास की नींव है, 
+                    जो उज्जवल भविष्य के लिए युवा मन का पोषण करती है।
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- School Details Modal -->
+    <div id="schoolModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="schoolModalBody">
+                <!-- School details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gram Sabha Maksoodan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/education.js"></script>
+</body>
+</html>
